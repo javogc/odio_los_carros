@@ -4,10 +4,10 @@ import classes from "./BioCard.module.css";
 function BioCard(props) {
   return (
     <div className="card_div">
-      <h3>{props.name}</h3>
-      <h5>{props.bio}</h5>
-      <h5>{props.location}</h5>
-      <a className="link" href={props.github} target="blank">
+      <h1>{props.name}</h1>
+      <p>{props.bio}</p>
+      <p>{props.location}</p>
+      {/* <a className="link" href={props.github} target="blank">
         GitHub
       </a>
       <a className="link" href={props.twitter} target="blank">
@@ -15,7 +15,7 @@ function BioCard(props) {
       </a>
       <a className="link" href={props.linkedin} target="blank">
         Linkedin
-      </a>
+      </a> */}
     </div>
   );
 }
