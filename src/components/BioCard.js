@@ -5,7 +5,8 @@ function BioCard(props) {
   return (
     <div className="card_div">
       <h1>{props.name}</h1>
-      <p>{props.bio}</p>
+      <p className="p_bio">{props.bio_esp}</p>
+      <p className="p_bio">{props.bio_eng}</p>
       <p>{props.location}</p>
       {/* <a className="link" href={props.github} target="blank">
         GitHub

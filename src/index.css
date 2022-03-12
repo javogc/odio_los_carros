@@ -19,3 +19,8 @@ code {
 .link {
   margin: 1.5rem;
 }
+
+.p_bio {
+  font-weight: bold;
+  font-style: italic;
+}

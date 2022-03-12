@@ -57,8 +57,9 @@ function App() {
     <div>
       <BioCard
         name="Javier Guajardo"
-        bio="Front-end Developer and Aspiring Data Viz Engineer"
-        location="&#128205; Mexico City"
+        bio_esp="Desarrolador front-end interesado en la visualización de datos"
+        bio_eng="Front-end Developer and Aspiring Data Viz Engineer"
+        location="&#128205; CDMX"
         github="https://github.com/javogc"
         twitter="https://twitter.com/javiergc"
         linkedin="https://www.linkedin.com/in/jguajardo"
