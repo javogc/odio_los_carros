@@ -8,7 +8,7 @@ function BioCard(props) {
       <p className="p_bio">{props.bio_esp}</p>
       <p className="p_bio">{props.bio_eng}</p>
       <p>{props.location}</p>
-      {/* <a className="link" href={props.github} target="blank">
+      <a className="link" href={props.github} target="blank">
         GitHub
       </a>
       <a className="link" href={props.twitter} target="blank">
@@ -16,7 +16,7 @@ function BioCard(props) {
       </a>
       <a className="link" href={props.linkedin} target="blank">
         Linkedin
-      </a> */}
+      </a>
     </div>
   );
 }
