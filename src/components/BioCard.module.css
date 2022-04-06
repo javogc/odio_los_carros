@@ -33,3 +33,18 @@ body {
 .link {
   margin: 1.5rem;
 }
+
+a {
+  transition: letter-spacing 600ms;
+  color: blueviolet;
+  text-decoration: underline;
+  word-break: break-all;
+  cursor: auto;
+}
+
+a:hover {
+  letter-spacing: 0.5em;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ade64c;
+}
