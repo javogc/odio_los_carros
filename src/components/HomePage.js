@@ -61,7 +61,7 @@ function HomePage() {
         <p>
           This is my personal portfolio and react playground.{" "}
           <b>"Odio los carros"</b> translates to <b>"I hate cars"</b> in
-          english. I chose this name for my online presence because i feel it
+          english. I chose this name for my online presence because I feel it
           embodies my passion for sustainable transportation in cities and my
           life as an urban cyclist. I'm currently looking for front-end
           development posistions, and I'm getting my self familiarized with
