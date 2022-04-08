@@ -57,9 +57,24 @@ function HomePage() {
   return (
     <div>
       <Container>
+        <h2>About this website:</h2>
+        <p>
+          This is my personal portfolio and react playground.{" "}
+          <b>"Odio los carros"</b> translates to <b>"I hate cars"</b> in
+          english. I chose this name for my online presence because i feel it
+          embodies my passion for sustainable transportation in cities and my
+          life as an urban cyclist. I'm currently looking for front-end
+          development posistions, and I'm getting my self familiarized with
+          react through building my personal portfolio with it. Below, you can
+          see journal entries that document my learning process.
+        </p>
+        <JournalEntry
+          title="08/04/2022 - Refactored app, and added a navbar"
+          text="I worked on refactoring the app to have a decluttered App.js file. I also added a Layout and Navigation component to organize those functionalities in Components, and also created a HomePage and AboutPage component for an upcoming implementation of routing."
+        />
         <JournalEntry
           title="05/04/2022 - Installed bootstrap and created journal entry component"
-          text="I'm continuing to explore react. This time I added bootstrap which is the CDN I'm more experienced with and I also like it very much. The next steps are going to involve creating, saving and fetching the newest journal entries in a database"
+          text="I'm continuing to explore react. This time I added bootstrap which is the CDN I'm more experienced with and I also like it very much."
         />
       </Container>
     </div>

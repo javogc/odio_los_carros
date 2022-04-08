@@ -9,7 +9,7 @@ function Navigation() {
       <Container>
         <Navbar.Brand href="#">Odio los carros</Navbar.Brand>
         <Nav.Link>About</Nav.Link>
-        <Nav.Link>Resume</Nav.Link>
+        {/* <Nav.Link>Resume</Nav.Link> */}
       </Container>
     </Navbar>
   );
