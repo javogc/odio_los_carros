@@ -1,9 +1,9 @@
 import React from "react";
 import axios from "axios";
-import JournalEntry from "./JournalEntry";
+import JournalEntry from "../JournalEntry";
 import Button from "react-bootstrap/Button";
 import { Container } from "react-bootstrap";
-
+import BioCard from "../BioCard";
 const client = axios.create({
   baseURL: "https://jsonplaceholder.typicode.com/posts",
 });
@@ -57,6 +57,11 @@ function HomePage() {
   return (
     <div className="mt-3">
       <Container>
+        <BioCard
+          bio_esp="Desarrolador front-end interesado en la visualización de datos"
+          bio_eng="Front-end Developer and Aspiring Data Viz Engineer"
+          location="&#128205; CDMX"
+        />
         <p>About this website:</p>
         <p>
           This is my personal portfolio and react playground.{" "}
@@ -70,18 +75,19 @@ function HomePage() {
           <br />
         </p>
         <p>
-          I'm currently looking for <b>front-end development posistions,</b> and
-          I'm getting my self familiarized with react through building my
-          personal portfolio with it. Below, you can see journal entries that
-          document my learning process.
+          I'm currently looking for{" "}
+          <b>full-time front-end development posistions,</b> and I'm getting my
+          self familiarized with <b>react</b> through building my personal
+          portfolio with it. Below, you can see journal entries that document my
+          learning process.
         </p>
       </Container>
       <Container>
         <div className="row mt-5">
           <h4>Latest updates:</h4>
           <JournalEntry
-            title="14/04/2022 - Updated style"
-            text="I change the look and feel of the portfolio. Updated the colors and font-family."
+            title="14/04/2022 - Updated style and added routing/navigation and Projects page."
+            text="I changed the look and feel of the site and updated the colors and font-family. I also added the 'react-router-dom' library to enable navigation between pages and created a new Projects page where I'll start posting my personal projects soon. "
           />
           <JournalEntry
             title="08/04/2022 - Refactored app, and added a navbar"

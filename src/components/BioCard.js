@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./BioCard.module.css";
 
 function BioCard(props) {
