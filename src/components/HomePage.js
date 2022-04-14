@@ -55,27 +55,43 @@ function HomePage() {
   if (!post) return null;
 
   return (
-    <div>
+    <div className="mt-3">
       <Container>
-        <h2>About this website:</h2>
+        <p>About this website:</p>
         <p>
           This is my personal portfolio and react playground.{" "}
           <b>"Odio los carros"</b> translates to <b>"I hate cars"</b> in
           english. I chose this name for my online presence because I feel it
-          embodies my passion for sustainable transportation in cities and my
-          life as an urban cyclist. I'm currently looking for front-end
-          development posistions, and I'm getting my self familiarized with
-          react through building my personal portfolio with it. Below, you can
-          see journal entries that document my learning process.
+          embodies my passion for{" "}
+          <b>
+            sustainable transportation in cities and my life as an urban
+            cyclist. &#128690;
+          </b>{" "}
+          <br />
         </p>
-        <JournalEntry
-          title="08/04/2022 - Refactored app, and added a navbar"
-          text="I worked on refactoring the app to have a decluttered App.js file. I also added a Layout and Navigation component to organize those functionalities in Components, and also created a HomePage and AboutPage component for an upcoming implementation of routing."
-        />
-        <JournalEntry
+        <p>
+          I'm currently looking for <b>front-end development posistions,</b> and
+          I'm getting my self familiarized with react through building my
+          personal portfolio with it. Below, you can see journal entries that
+          document my learning process.
+        </p>
+      </Container>
+      <Container>
+        <div className="row mt-5">
+          <h4>Latest updates:</h4>
+          <JournalEntry
+            title="14/04/2022 - Updated style"
+            text="I change the look and feel of the portfolio. Updated the colors and font-family."
+          />
+          <JournalEntry
+            title="08/04/2022 - Refactored app, and added a navbar"
+            text="I worked on refactoring the app to have a decluttered App.js file. I also added a Layout and Navigation component to organize those functionalities in Components, and also created a HomePage and AboutPage component for an upcoming implementation of routing."
+          />
+          {/* <JournalEntry
           title="05/04/2022 - Installed bootstrap and created journal entry component"
           text="I'm continuing to explore react. This time I added bootstrap which is the CDN I'm more experienced with and I also like it very much."
-        />
+        /> */}
+        </div>
       </Container>
     </div>
   );

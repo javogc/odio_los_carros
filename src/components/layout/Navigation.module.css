@@ -1,0 +1,18 @@
+nav {
+  background-color: #efdbf7;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  transition: letter-spacing 600ms;
+  word-break: break-all;
+  cursor: auto;
+}
+
+a:hover {
+  letter-spacing: 0.5em;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e64cd4;
+}
