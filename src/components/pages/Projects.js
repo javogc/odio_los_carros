@@ -1,6 +1,10 @@
 import { Container } from "react-bootstrap";
+import { useState, useEffect } from "react";
 
 function Projects() {
+  useEffect(() => {
+    console.log("use effect");
+  }, []);
   return (
     <div>
       <Container>

@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 nav {
-  background-color: #efdbf7;
+  color: #4b7b4b;
+  background-color: #f8f7f7;
 }
 
 a {
-  color: black;
+  color: #4b7b4b;
   text-decoration: none;
   transition: letter-spacing 600ms;
   word-break: break-all;

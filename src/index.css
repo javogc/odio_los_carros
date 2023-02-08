@@ -5,7 +5,8 @@ body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #efdbf7;
+  color: #4b7b4b;
+  background-color: #f8f7f7;
 }
 
 code {
