@@ -9,14 +9,8 @@ function Navigation() {
   return (
     <Navbar expand="lg" className="custom-nav mb-3">
       <Container>
-        {/* <Navbar.Brand>
-          <Link to="/">Javier Guajardo</Link>
-        </Navbar.Brand>
-        <Nav.Link>
-          <Link to="/projects">Projects</Link>
-        </Nav.Link> */}
         <Nav.Link
-          href="https://drive.google.com/file/d/1S2A2MeOP_RcZRjIgAzN2K1HeD7OWV0je/view?usp=sharing"
+          href="https://drive.google.com/file/d/1gF-Xj7v_tEP4Q_z6LZSfL6RAu95SP7Nc/view?usp=sharing"
           target="blank"
         >
           Resume{" "}
