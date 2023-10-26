@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./Card.css";
 
-interface Props {
+interface ICardProps {
   title: string;
-  content: React.ReactNode;
+  content?: React.ReactNode;
 }
 
-const Card: React.FC<Props> = ({ title, content }: Props): JSX.Element => {
+const Card: React.FC<ICardProps> = ({
+  title,
+  content,
+}: ICardProps): JSX.Element => {
   // const [count, setCount] = useState(0);
 
   return (
