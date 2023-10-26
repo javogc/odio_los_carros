@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #4b7b4b;
+  background-color: #f8f7f7;
+  border: 0;
+}
+
+.cardTitle {
+  font-size: 32px;
+}
