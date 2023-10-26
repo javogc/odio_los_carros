@@ -1,0 +1,17 @@
+.noError {
+  font-weight: bold;
+  color: purple;
+  font-size: 12px;
+}
+
+.error {
+  font-weight: bold;
+  color: red;
+  font-size: 12px;
+}
+
+.episodeSlider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
