@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "../Card/Card";
 import axios from "axios";
 import { Episode } from "../../models/Episode";
+import { Response } from "../../models/Response";
 import "./List.css";
 
 interface IListProps {}
@@ -9,6 +10,7 @@ interface IListProps {}
 const List: React.FC<IListProps> = (): JSX.Element => {
   const [errors, setErrors] = useState([]);
   const [episodes, setEpisodes] = useState<Episode[]>([]);
+  const [episodes2, setEpisodes2] = useState<Response>();
   const [currentEpisode, setCurrentEpisode] = useState(1);
 
   const nextEpisode = () => {
@@ -36,6 +38,13 @@ const List: React.FC<IListProps> = (): JSX.Element => {
       .catch((error) => {
         setErrors(error);
       });
+
+    fetch("https://rickandmortyapi.com/api/episode")
+      .then((response) => response.json())
+      .then((json) => setEpisodes2(json))
+      .catch((error) => console.error(error));
+
+    console.log("episode2", episodes2);
   }, []);
 
   return (
