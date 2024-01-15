@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import BioCard from "../BioCard";
-import Card from "../Card/Card";
-import List from "../List/List";
+import BioCard from "../../BioCard";
+import Card from "../../Card/Card";
+import List from "../../List/List";
 
 function HomePage() {
   return (

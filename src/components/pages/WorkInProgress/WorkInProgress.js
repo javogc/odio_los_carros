@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./EmptyPage.module.css";
+import style from "./WorkInProgress.module.css";
 
-function EmptyPage() {
+function WorkInProgress() {
   return (
     <div className={style.container}>
       <h1 className={style.text}>Work in progress :-)</h1>
@@ -9,4 +9,4 @@ function EmptyPage() {
   );
 }
 
-export default EmptyPage;
+export default WorkInProgress;
