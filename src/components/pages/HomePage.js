@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import BioCard from "../BioCard";
 import Card from "../Card/Card";
 import List from "../List/List";
+import Drawing from "../Drawing/Drawing";
 
 function HomePage() {
   return (
@@ -34,6 +35,7 @@ function HomePage() {
           }
         />
         <List />
+        <Drawing />
       </Container>
     </div>
   );
