@@ -17,7 +17,6 @@
     "react-leaflet": "^3.2.5",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
-    "state-pool": "^0.10.0",
     "typescript": "^5.2.2"
   },
   "scripts": {
