@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container } from "react-bootstrap";
 import BioCard from "../../BioCard";
 import Card from "../../Card/Card";
 import List from "../../List/List";
+import { LanguageContext } from "../../../contexts/LanguageContext";
+import { translations } from "../../../utils/translations";
 
 function HomePage() {
+  const { language, toggleLanguage } = useContext(LanguageContext);
   return (
     <div className="mt-3">
       <Container>
@@ -14,26 +17,39 @@ function HomePage() {
           location="&#128205; CDMX"
         />
         <Card
-          title={"About this site"}
+          title={
+            language === "en"
+              ? translations.english.title
+              : translations.spanish.title
+          }
           content={
-            <div>
-              <p>
-                This is my personal portfolio and react playground.
-                <b>"Odio los carros"</b> translates to <b>"I hate cars"</b> in
-                english. I chose this name for my online presence because I feel
-                it embodies my passion for building{" "}
-                <b>
-                  solarpunk, self-reliant, sustainable and community-oriented
-                  technology
-                </b>
-                ,that positively impact our lifes in cities and our relationship
-                with nature.&#128690;
-                <br />
-              </p>
-            </div>
+            language === "en"
+              ? translations.english.homeContent
+              : translations.spanish.homeContent
           }
         />
-        <List />
+        <List
+          title={
+            language === "en"
+              ? translations.english.listTitle
+              : translations.spanish.listTitle
+          }
+          subtitle={
+            language === "en"
+              ? translations.english.listSubtitle
+              : translations.spanish.listSubtitle
+          }
+          fetchingFailed={
+            language === "en"
+              ? translations.english.listFetchingFailed
+              : translations.spanish.listFetchingFailed
+          }
+          fetchingSuccess={
+            language === "en"
+              ? translations.english.listFetchingSuccess
+              : translations.spanish.listFetchingSuccess
+          }
+        />
       </Container>
     </div>
   );
