@@ -5,9 +5,19 @@ import { Episode } from "../../models/Episode";
 import { Response } from "../../models/Response";
 import "./List.css";
 
-interface IListProps {}
+interface IListProps {
+  title: string;
+  subtitle: string;
+  fetchingSuccess: string;
+  fetchingFailed: string;
+}
 
-const List: React.FC<IListProps> = (): JSX.Element => {
+const List: React.FC<IListProps> = ({
+  title,
+  subtitle,
+  fetchingSuccess,
+  fetchingFailed,
+}): JSX.Element => {
   const [errors, setErrors] = useState([]);
   const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [episodes2, setEpisodes2] = useState<Response>();
@@ -43,28 +53,23 @@ const List: React.FC<IListProps> = (): JSX.Element => {
       .then((response) => response.json())
       .then((json) => setEpisodes2(json))
       .catch((error) => console.error(error));
-
-    console.log("episode2", episodes2);
   }, []);
 
   return (
     <div>
-      <h3>Browse through different Rick and Morty episodes</h3>
-      <p>
-        This a simple example using axios, typescript and the Rick and Morty API
-        to fetch some data and display as a circular slider to users.
-      </p>
+      <h3>{title}</h3>
+      <p>{subtitle}</p>
       <p className={errors.length > 0 ? "error" : "noError"}>
-        {errors.length > 0 ? "Error fetching data" : "Succesfull data fetching"}
+        {errors.length > 0 ? fetchingFailed : fetchingSuccess}
       </p>
       <div className="episodeSlider">
-        <button onClick={previousEpisode}>Previous</button>
+        <button onClick={previousEpisode}>{"<"}</button>
         {episodes
           .filter((episode) => episode.id === currentEpisode)
           .map((episode) => (
-            <Card title={episode.name} />
+            <Card title={episode.name} key={episode.id} />
           ))}
-        <button onClick={nextEpisode}>Next</button>
+        <button onClick={nextEpisode}>{">"}</button>
       </div>
     </div>
   );
