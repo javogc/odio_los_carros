@@ -11,45 +11,10 @@ function HomePage() {
   return (
     <div className="mt-3">
       <Container>
-        <BioCard
-          name_esp="Javier Guajardo"
-          name_eng="Javier Guajardo"
-          location="&#128205; CDMX"
-        />
-        <Card
-          title={
-            language === "en"
-              ? translations.english.title
-              : translations.spanish.title
-          }
-          content={
-            language === "en"
-              ? translations.english.homeContent
-              : translations.spanish.homeContent
-          }
-        />
-        <List
-          title={
-            language === "en"
-              ? translations.english.listTitle
-              : translations.spanish.listTitle
-          }
-          subtitle={
-            language === "en"
-              ? translations.english.listSubtitle
-              : translations.spanish.listSubtitle
-          }
-          fetchingFailed={
-            language === "en"
-              ? translations.english.listFetchingFailed
-              : translations.spanish.listFetchingFailed
-          }
-          fetchingSuccess={
-            language === "en"
-              ? translations.english.listFetchingSuccess
-              : translations.spanish.listFetchingSuccess
-          }
-        />
+        <BioCard name_esp="Javier Guajardo" name_eng="Javier Guajardo" />
+        <div>
+          <h2>Updating...</h2>
+        </div>
       </Container>
     </div>
   );
