@@ -11,11 +11,12 @@ a {
   transition: letter-spacing 600ms;
   word-break: break-all;
   cursor: auto;
+  font-weight: bold;
 }
 
 a:hover {
   letter-spacing: 0.5em;
   font-size: 20px;
   font-weight: bold;
-  color: #ba1eee;
+  color: #5eec0c;
 }

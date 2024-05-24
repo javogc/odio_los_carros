@@ -24,9 +24,9 @@ function Navigation() {
         <Nav.Link href="https://www.linkedin.com/in/jguajardo" target="blank">
           LinkedIn
         </Nav.Link>
-        <Nav.Link href="/projects">
+        {/* <Nav.Link href="/projects">
           {language === "en" ? "Projects" : "Proyectos"}
-        </Nav.Link>
+        </Nav.Link> */}
         <Nav.Item>
           <select defaultValue={language} onChange={toggleLanguage}>
             <option value="en">English</option>
