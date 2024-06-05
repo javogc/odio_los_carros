@@ -1,18 +1,14 @@
 import React, { useContext } from "react";
 import { Container } from "react-bootstrap";
-import BioCard from "../../BioCard";
 import "./HomePage.css";
 import { LanguageContext } from "../../../contexts/LanguageContext";
 
 function HomePage() {
-  const { language, toggleLanguage } = useContext(LanguageContext);
+  const { language } = useContext(LanguageContext);
+
   return (
     <div className="mt-3">
       <Container>
-        <BioCard
-          name_esp="Hola, Soy Javier Guajardo"
-          name_eng="Hi, I'm Javier Guajardo"
-        />
         {language === "es" && (
           <div>
             <div>
