@@ -1,10 +1,10 @@
 import React from "react";
-import Navigation from "./Navigation";
+import NavBar from "./NavBar/NavBar";
 
 function Layout(props) {
   return (
     <div>
-      <Navigation />
+      <NavBar />
       <main>{props.children}</main>
     </div>
   );
