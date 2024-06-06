@@ -6,43 +6,41 @@ function HomePage() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="mt-3">
-      <div>
-        {language === "es" && (
+    <div className="homeContainer">
+      {language === "es" && (
+        <div>
           <div>
-            <div>
-              <h1>Javier Guajardo</h1>
-              <h2>Estoy actualizando este sitio</h2>
-              <h5>Próximante: página de proyectos</h5>
-            </div>
-            <div>
-              <h5>
-                Para consultas o cotizaciónes:{" "}
-                <a className="homeLink" href="mailto:javiergc93@gmail.com">
-                  Cóntactame
-                </a>
-              </h5>
-            </div>
+            <h1>Javier Guajardo</h1>
+            <h2>Estoy actualizando este sitio</h2>
+            <h5>Próximante: página de proyectos</h5>
           </div>
-        )}
-        {language === "en" && (
           <div>
-            <div>
-              <h1>Javier Guajardo</h1>
-              <h2>I'm updating this website</h2>
-              <h5>Coming soon: projects section</h5>
-            </div>
-            <div>
-              <h5>
-                For inquiries or invoices:{" "}
-                <a className="homeLink" href="mailto:javiergc93@gmail.com">
-                  Contact Me
-                </a>
-              </h5>
-            </div>
+            <h5>
+              Para consultas o cotizaciónes:{" "}
+              <a className="homeLink" href="mailto:javiergc93@gmail.com">
+                Cóntactame
+              </a>
+            </h5>
           </div>
-        )}
-      </div>
+        </div>
+      )}
+      {language === "en" && (
+        <div>
+          <div>
+            <h1>Javier Guajardo</h1>
+            <h2>I'm updating this website</h2>
+            <h5>Coming soon: projects section</h5>
+          </div>
+          <div>
+            <h5>
+              For inquiries or invoices:{" "}
+              <a className="homeLink" href="mailto:javiergc93@gmail.com">
+                Contact Me
+              </a>
+            </h5>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

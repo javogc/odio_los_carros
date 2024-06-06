@@ -1,3 +1,7 @@
+.homeContainer {
+  margin: 40px;
+}
+
 h5 .homeLink {
   text-decoration: none;
   transition: letter-spacing 600ms;
