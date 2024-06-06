@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Container } from "react-bootstrap";
 import "./HomePage.css";
 import { LanguageContext } from "../../../contexts/LanguageContext";
 
@@ -8,7 +7,7 @@ function HomePage() {
 
   return (
     <div className="mt-3">
-      <Container>
+      <div>
         {language === "es" && (
           <div>
             <div>
@@ -43,7 +42,7 @@ function HomePage() {
             </div>
           </div>
         )}
-      </Container>
+      </div>
     </div>
   );
 }
