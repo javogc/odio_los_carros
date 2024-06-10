@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 export default function NavBar() {
   return (
     <nav>
-      <a href="/">Inicio</a>
+      <Link to="/">Inicio</Link>
+      <Link to="/projects">Proyectos</Link>
       <a href="https://github.com/javogc" target="blank">
         Github
       </a>

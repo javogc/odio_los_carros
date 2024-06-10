@@ -1,21 +1,40 @@
-import { Routes, Route } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import HomePage from "./components/pages/HomePage/HomePage";
-import Volcanes from "./components/pages/Volcanes/Volcanes";
 import Projects from "./components/pages/Projects/Projects";
+import ProjectDetail from "./components/pages/Projects/ProjectDetail/ProjectDetail";
 import Layout from "./components/Layout/Layout";
 
-function App() {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      { path: "/", element: <HomePage /> },
+      {
+        path: "/projects/*",
+        children: [
+          { index: true, element: <Projects /> },
+          { path: "*", element: <ProjectDetail /> },
+        ],
+      },
+    ],
+  },
+]);
+
+export default function App() {
+  return <RouterProvider router={router} />;
+}
+
+function Root() {
   return (
     <div>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/volcanes" element={<Volcanes />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </Layout>
+      <Layout />
+      <Routes></Routes>
     </div>
   );
 }
-
-export default App;

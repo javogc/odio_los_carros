@@ -1,15 +1,13 @@
 import React from "react";
 import NavBar from "./NavBar/NavBar";
+import { Outlet } from "react-router-dom";
 
-type LayoutProps = {
-  children: React.ReactNode;
-};
-function Layout({ children }: LayoutProps) {
+function Layout() {
   return (
-    <div>
+    <>
       <NavBar />
-      <main>{children}</main>
-    </div>
+      <Outlet />
+    </>
   );
 }
 
