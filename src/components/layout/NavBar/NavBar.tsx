@@ -5,7 +5,7 @@ import "./NavBar.css";
 export default function NavBar() {
   return (
     <nav>
-      <Link to="/">Inicio</Link>
+      <Link to="/">Home</Link>
       <Link to="/projects">Projects</Link>
       <a href="https://github.com/javogc" target="blank">
         Github
