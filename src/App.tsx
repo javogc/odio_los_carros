@@ -7,20 +7,26 @@ import {
 import HomePage from "./components/pages/HomePage/HomePage";
 import Projects from "./components/pages/Projects/Projects";
 import ProjectDetail from "./components/pages/Projects/ProjectDetail/ProjectDetail";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import Layout from "./components/Layout/Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <NotFoundPage />,
     children: [
-      { path: "/", element: <HomePage /> },
       {
-        path: "/projects/*",
-        children: [
-          { index: true, element: <Projects /> },
-          { path: "*", element: <ProjectDetail /> },
-        ],
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+      {
+        path: "/projects/:projectId",
+        element: <ProjectDetail />,
       },
     ],
   },

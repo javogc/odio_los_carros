@@ -13,7 +13,7 @@ nav {
   height: auto;
 }
 
-a {
+nav a {
   color: #4b7b4b;
   text-decoration: none;
   transition: letter-spacing 600ms;
@@ -22,7 +22,7 @@ a {
   font-weight: bold;
 }
 
-a:hover {
+nav a:hover {
   letter-spacing: 0.5em;
   font-size: 20px;
   font-weight: bold;
