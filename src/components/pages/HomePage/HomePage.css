@@ -2,15 +2,15 @@
   margin: 40px;
 }
 
-h5 .homeLink {
-  text-decoration: none;
+h4 .homeLink {
+  text-decoration: underline;
   transition: letter-spacing 600ms;
   word-break: break-all;
   cursor: auto;
   color: #dcdad7 !important;
 }
 
-h5 .homeLink:hover {
+h4 .homeLink:hover {
   letter-spacing: 0.5em;
   font-size: 20px;
   font-weight: bold;

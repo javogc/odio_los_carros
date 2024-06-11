@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <nav>
       <Link to="/">Inicio</Link>
-      <Link to="/projects">Proyectos</Link>
+      <Link to="/projects">Projects</Link>
       <a href="https://github.com/javogc" target="blank">
         Github
       </a>
