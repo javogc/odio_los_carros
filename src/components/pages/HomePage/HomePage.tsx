@@ -10,12 +10,15 @@ function HomePage() {
           <h4>
             Hey there! I'm <b>Javier Guajardo</b>, a full-stack web developer
             based in Mexico City with a knack for crafting impactful digital
-            experiences. Currently freelancing, I specialize in building
-            intuitive data dashboards and interactive maps that empower users
-            with insights and engage them on a deeper level. Passionate about
-            user-centric design and continuous learning, I thrive on
-            collaborating closely with clients to bring their visions to life.{" "}
-            <br></br>
+            experiences. Currently freelancing,{" "}
+            <b>
+              I specialize in building intuitive data dashboards, interactive
+              maps, and a wide range of custom web applications{" "}
+            </b>{" "}
+            that empower users with insights and engage them on a deeper level.
+            Passionate about user-centric design and continuous learning, I
+            thrive on collaborating closely with clients to bring their visions
+            to life. <br></br>
             <br></br>My{" "}
             <Link to="/projects" className="homeLink">
               portfolio{" "}
