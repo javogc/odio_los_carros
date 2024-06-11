@@ -38,7 +38,7 @@ export default function ProjectDetail() {
             </h6>
           )}
         </div>
-        <div style={{ width: "50%" }}>
+        <div className="description">
           <p>{description}</p>
         </div>
       </div>
