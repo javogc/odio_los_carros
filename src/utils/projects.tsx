@@ -6,6 +6,7 @@ export type ProjectType = {
   description: string;
   year: number;
   link?: string;
+  images?: string[];
 };
 
 export const projects: ProjectType[] = [
@@ -24,6 +25,7 @@ export const projects: ProjectType[] = [
     description:
       "For this project, I developed a landing page and form for the Plataforma de Partipación Ciudadana (Civic Participation Platform) for the mexican state of Queretaro. For the frontend I used React with Typescript, Material UI and also Formik and Yup to create and validate the form. For the backend, I used firebase, which challenged me to ensure the security was tight to protect the comments receieved from citizens. To achieve this, I harnessed tools like AppCheck, Firestore Security Rules and Annonymous Authentication to ensure that the application was safe from attacks. This project also allowed me to further my understanding of the different security headers that exist,  and that led to this app getting an A+ rating from https://securityheaders.com/",
     link: "https://www.queretaro2050.mx/",
+    images: ["home_qto", "form_qto", "seccion2_qto"],
     id: "qto-2050",
   },
   {
