@@ -25,10 +25,14 @@ export default function ProjectDetail() {
               ? "Freelance Project"
               : `Developed while working at ${company}`}
           </h6>
-          <h6>Tech Stack: {stack.toString()}</h6>
-          {link != undefined && (
+          <h6>Technologies used:</h6>
+          {stack.map((s) => (
+            <h6>-{s}</h6>
+          ))}
+          {/* <h6>Tech Stack: {stack.toString()}</h6> */}
+          {link !== undefined && (
             <h6>
-              <a href={link} target="_blank">
+              <a href={link} target="_blank" rel="noreferrer">
                 Visit the website{" "}
               </a>
             </h6>

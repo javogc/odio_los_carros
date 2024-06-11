@@ -6,20 +6,15 @@ export type ProjectType = {
   description: string;
   year: number;
   link?: string;
+  type: string;
   images?: string[];
 };
 
 export const projects: ProjectType[] = [
   {
     title: "Plan Querétaro 2050",
-    stack: [
-      "react",
-      "firebase",
-      "css",
-      "fullstack",
-      "materialUI",
-      "typescript",
-    ],
+    stack: ["react", "firebase", "css", "materialUI", "typescript"],
+    type: "Fullstack",
     company: "Freelance",
     year: 2024,
     description:
@@ -30,15 +25,8 @@ export const projects: ProjectType[] = [
   },
   {
     title: "Red Río Vivo",
-    stack: [
-      "react",
-      "firebase",
-      "css",
-      "fullstack",
-      "materialUI",
-      "leaflet",
-      "javascript",
-    ],
+    stack: ["react", "firebase", "css", "materialUI", "leaflet", "javascript"],
+    type: "Fullstack",
     company: "Freelance",
     year: 2024,
     description: "",
@@ -46,7 +34,8 @@ export const projects: ProjectType[] = [
   },
   {
     title: "Odio los Carros",
-    stack: ["react", "firebase", "css", "fullstack", "typescript"],
+    stack: ["react", "firebase", "css", "typescript"],
+    type: "Fullstack",
     company: "Freelance",
     year: 2024,
     description: "",
@@ -56,6 +45,7 @@ export const projects: ProjectType[] = [
     title: "Distrito Valle Oriente",
     stack: ["html", "wordpress", "css", "javascript"],
     company: "Freelance",
+    type: "Frontend",
     year: 2023,
     description: "",
     link: "https://patronatodistritovalleoriente.mx/",
@@ -63,7 +53,8 @@ export const projects: ProjectType[] = [
   },
   {
     title: "Red de Información de Violencia Contra las Mujeres",
-    stack: ["project management", "agile", "javascript", "php", "laravel"],
+    stack: ["agile", "javascript", "php", "laravel"],
+    type: "Project Managment - Fullstack",
     company: "Gobierno CDMX",
     year: 2022,
     description: "",
@@ -72,6 +63,7 @@ export const projects: ProjectType[] = [
   {
     title: "Dashboard Público de Seguridad",
     stack: ["angular", "d3.js", "html", "typescript", "javascript"],
+    type: "Frontend",
     company: "Gobierno CDMX",
     year: 2019,
     id: "dashboard-publico-seguridad",
@@ -82,6 +74,7 @@ export const projects: ProjectType[] = [
     title: "Modelo COVID19 - CDMX",
     stack: ["angular", "d3.js", "html", "typescript", "javascript"],
     company: "Gobierno CDMX",
+    type: "Frontend",
     id: "modelo-covid",
     year: 2021,
     description: "",
@@ -90,6 +83,7 @@ export const projects: ProjectType[] = [
   {
     title: "Dashboard COVID19 - CDMX",
     stack: ["angular", "d3.js", "html", "typescript", "javascript"],
+    type: "Frontend",
     company: "Gobierno CDMX",
     year: 2020,
     id: "dashboard-covid",
@@ -98,6 +92,7 @@ export const projects: ProjectType[] = [
   {
     title: "Dashboard Gabinete de Seguridad - CDMX",
     stack: ["angular", "d3.js", "html", "typescript", "javascript"],
+    type: "Frontend",
     company: "Gobierno CDMX",
     year: 2019,
     id: "dashboard-seguridad",

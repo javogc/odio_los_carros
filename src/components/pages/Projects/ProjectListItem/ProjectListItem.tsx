@@ -9,7 +9,7 @@ type ProjectListItemProps = {
 };
 
 export default function ProjectListItem({ project }: ProjectListItemProps) {
-  const { title, company, stack, id, year } = project;
+  const { title, company, type, id, year } = project;
 
   return (
     <div className="listItem">
@@ -19,7 +19,7 @@ export default function ProjectListItem({ project }: ProjectListItemProps) {
       <h5>
         {company}, {year}
       </h5>
-      <p>{stack.toString()}</p>
+      <h5>{type}</h5>
     </div>
   );
 }
