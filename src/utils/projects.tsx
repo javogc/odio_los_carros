@@ -8,6 +8,9 @@ export type ProjectType = {
   link?: string;
   type: string;
   images?: string[];
+  development?: boolean;
+  active?: boolean;
+  private?: boolean;
 };
 
 export const projects: ProjectType[] = [
@@ -22,15 +25,33 @@ export const projects: ProjectType[] = [
     link: "https://www.queretaro2050.mx/",
     images: ["home_qto", "form_qto", "seccion2_qto"],
     id: "qto-2050",
+    active: true,
+    private: false,
+    development: false,
   },
   {
     title: "Red Río Vivo",
-    stack: ["react", "firebase", "css", "materialUI", "leaflet", "javascript"],
+    stack: [
+      "react",
+      "supabase",
+      "css",
+      "materialUI",
+      "leaflet",
+      "javascript",
+      "Postgres",
+      "PostGIS",
+    ],
     type: "Fullstack",
     company: "Freelance",
     year: 2024,
-    description: "",
+    description:
+      "This is an ongoing project. It consists of two parts: a landing page and an interactive page. The landing page is live and was developed using plain HTML + CSS. The interactive map is still in development; it's a React app communicating with a Supabase backend using PostGIS to query geographical data and then displaying it leveraging the Leaflet library. ",
+    link: "https://riovivo.red/",
+    images: ["rv1", "rv2"],
     id: "red-rio-vivo",
+    active: true,
+    private: false,
+    development: true,
   },
   {
     title: "Odio los Carros",
@@ -38,8 +59,13 @@ export const projects: ProjectType[] = [
     type: "Fullstack",
     company: "Freelance",
     year: 2024,
-    description: "",
+    description:
+      "Odios los carros is my personal portfolio. I built this app as one of my early React projects. Since then, it has gone through several versions, all documented in its GitHub repository. The latest updates included cleaning up the project, upgrading to TypeScript, and adding a new projects section. This is an active project that will evolve over time. My intention with it is to use my personal portfolio as a playground to showcase technologies I'm interested in.",
+    link: "https://odioloscarros.net/",
     id: "odio-los-carros",
+    active: true,
+    private: false,
+    development: true,
   },
   {
     title: "Distrito Valle Oriente",
@@ -50,15 +76,21 @@ export const projects: ProjectType[] = [
     description: "",
     link: "https://patronatodistritovalleoriente.mx/",
     id: "distrito-vo",
+    active: false,
+    private: false,
+    development: false,
   },
   {
     title: "Red de Información de Violencia Contra las Mujeres",
-    stack: ["agile", "javascript", "php", "laravel"],
+    stack: ["agile", "javascript", "php", "laravel", "javascript"],
     type: "Project Managment - Fullstack",
     company: "Gobierno CDMX",
     year: 2022,
     description: "",
     id: "rivcm",
+    active: false,
+    private: true,
+    development: false,
   },
   {
     title: "Dashboard Público de Seguridad",

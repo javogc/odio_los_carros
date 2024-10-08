@@ -1,13 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import logo from "../../../images/logo1.png";
 
 export default function NavBar() {
   return (
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/projects">Projects</Link>
-      <a href="https://github.com/javogc" target="blank">
+      <img src={logo} style={{ width: "10%%" }}></img>
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/projects">Projects</Link>
+      </div>
+
+      {/* <a href="https://github.com/javogc" target="blank">
         Github
       </a>
       <a
@@ -18,7 +23,7 @@ export default function NavBar() {
       </a>
       <a href="https://www.linkedin.com/in/jguajardo" target="blank">
         Linkedin
-      </a>
+      </a> */}
     </nav>
   );
 }
