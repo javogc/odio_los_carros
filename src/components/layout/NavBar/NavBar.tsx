@@ -5,10 +5,10 @@ import logo from "../../../images/logo1.png";
 
 export default function NavBar() {
   return (
-    <nav className="flex bg-white px-6 py-4 justify-between items-center ">
+    <nav className="flex bg-white px-16 py-6 justify-between items-center ">
       <div className="flex items-center">
         <Link to="/">
-          <img src={logo} className="h-24"></img>
+          <img src={logo} className="h-20"></img>
         </Link>
       </div>
 
