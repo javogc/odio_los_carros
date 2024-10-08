@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-body {
+/* body {
   margin: 0;
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -13,17 +13,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-/* .card_div {
-  text-align: center;
-}
-
-.link {
-  margin: 1.5rem;
-}
-
-.p_bio {
-  font-weight: bold;
-  font-style: italic;
 } */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
