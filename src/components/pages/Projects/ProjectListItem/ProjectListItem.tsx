@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectListItem.css";
+// import "./ProjectListItem.css";
 import { ProjectType } from "../../../../utils/projects";
 import { Link } from "react-router-dom";
 

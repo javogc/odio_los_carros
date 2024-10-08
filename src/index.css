@@ -1,20 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-
-/* body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #5e8c5e;
-  color: #dcdad7;
-  font-family: "Roboto Mono", monospace;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav a {
+  text-decoration: none;
+  transition: letter-spacing 600ms, color 600ms, font-size 600ms;
+  word-break: break-all;
+  cursor: auto;
+  font-weight: bold;
+}
+
+nav a:hover {
+  letter-spacing: 0.5em;
+  font-size: 20px;
+  color: #5eec0c;
+}

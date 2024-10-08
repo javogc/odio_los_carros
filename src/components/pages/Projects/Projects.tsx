@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css";
+// import "./Projects.css";
 import ProjectListItem from "./ProjectListItem/ProjectListItem";
 import { projects } from "../../../utils/projects";
 

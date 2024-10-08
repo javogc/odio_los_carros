@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProjectDetail.css";
+// import "./ProjectDetail.css";
 import { useParams } from "react-router-dom";
 import { projects } from "../../../../utils/projects";
 import ImageSlider from "../ImageSlider/ImageSlider";
