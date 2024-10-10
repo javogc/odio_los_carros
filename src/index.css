@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #dcdad7;
+  background-color: #4b7b4b;
   font-family: "Roboto Mono", monospace;
 }
 nav a {
