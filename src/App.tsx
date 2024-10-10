@@ -4,6 +4,7 @@ import Projects from "./components/pages/Projects/Projects";
 import ProjectDetail from "./components/pages/Projects/ProjectDetail/ProjectDetail";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import Layout from "./components/Layout/Layout";
+import Accidentes from "./components/pages/Accidentes/Accidentes";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/projects/:projectId",
         element: <ProjectDetail />,
+      },
+      {
+        path: "/accidentes",
+        element: <Accidentes />,
       },
     ],
   },
