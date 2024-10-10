@@ -4,7 +4,7 @@ import Projects from "./components/pages/Projects/Projects";
 import ProjectDetail from "./components/pages/Projects/ProjectDetail/ProjectDetail";
 import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 import Layout from "./components/Layout/Layout";
-import Accidentes from "./components/pages/Accidentes/Accidentes";
+// import Accidentes from "./components/pages/Accidentes/Accidentes";
 
 const router = createBrowserRouter([
   {
@@ -13,26 +13,26 @@ const router = createBrowserRouter([
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/",
+        index: true,
         element: <HomePage />,
       },
       {
-        path: "/projects",
+        path: "projects",
         element: <Projects />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <HomePage />,
       },
       {
-        path: "/projects/:projectId",
+        path: "projects/:projectId",
         element: <ProjectDetail />,
       },
 
-      {
-        path: "/accidentes",
-        element: <Accidentes />,
-      },
+      // {
+      //   path: "/accidentes",
+      //   element: <Accidentes />,
+      // },
     ],
   },
 ]);
@@ -45,7 +45,6 @@ function Root() {
   return (
     <div className="bg-odioGreen min-h-screen">
       <Layout />
-      <Routes></Routes>
     </div>
   );
 }

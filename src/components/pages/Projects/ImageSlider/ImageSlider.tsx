@@ -9,7 +9,6 @@ export default function ImageSlider({ images }: ImageSliderProps) {
   const imagesLength = images.length - 1;
 
   const nextImage = () => {
-    console.log("next image");
     if (imageIndex === imagesLength) {
       setImageIndex(0);
     } else {
@@ -18,7 +17,6 @@ export default function ImageSlider({ images }: ImageSliderProps) {
   };
 
   const previousImage = () => {
-    console.log("imageindex previous", imageIndex);
     if (imageIndex === 0) {
       setImageIndex(imagesLength);
     } else {
