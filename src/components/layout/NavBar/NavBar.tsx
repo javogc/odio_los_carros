@@ -5,19 +5,31 @@ import logo from "../../../images/logo1.png";
 
 export default function NavBar() {
   return (
-    <nav className="flex bg-white px-16 py-6 justify-between items-center ">
+    <nav className="flex bg-white  px-8 md:px-16 py-6 justify-between items-center shadow-md">
       <div className="flex items-center">
         <Link to="/">
-          <img src={logo} className="h-20"></img>
+          <img src={logo} className="h-20" alt="logo-odioloscarros"></img>
         </Link>
       </div>
 
       <div className="flex space-x-8">
         <Link
           to="/projects"
-          className="text-odioGreen text-xl font-bold transition-all duration-600 hover:letter-spacing-0.5em hover:text-odioHover"
+          className="text-odioGreen text-xl font-bold transition-all duration-600 hover:letter-spacing-0.5em hover:text-odioHoveronHover"
         >
           Projects
+        </Link>
+        <Link
+          to="/about"
+          className="text-odioGreen text-xl font-bold transition-all duration-300 hover:letter-spacing-0.5em hover:odioHoveronHover"
+        >
+          About
+        </Link>
+        <Link
+          to="/contact"
+          className="text-odioGreen text-xl font-bold transition-all duration-300 hover:letter-spacing-0.5em hover:odioHoveronHover"
+        >
+          Contact
         </Link>
       </div>
       {/* <div>

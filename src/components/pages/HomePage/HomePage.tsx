@@ -1,11 +1,10 @@
 import React from "react";
 // import "./HomePage.css";
-import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    <div className="bg-odioGreen text-odioWhite h-[90vh] w-full flex items-center justify-center p-4">
-      <p className="text-start text-[22px] font-robotoMono font-light leading-[1.2]">
+    <div className="bg-odioGreen text-odioWhite h-auto w-full flex items-center justify-center p-4 h-auto overflow-auto">
+      <h4 className="text-start text-[22px] font-robotoMono font-light leading-[1.2]">
         ¡Hola! Soy Javier Guajardo, un desarrollador web full-stack de la Ciudad
         de México, y estoy detrás de <b>Odio los Carros.</b> Este proyecto busca
         cuestionar cómo usamos la tecnología en nuestras vidas. Creo firmemente
@@ -29,14 +28,15 @@ function HomePage() {
         positivo. Si tienes una idea o un proyecto en mente y quieres explorar
         cómo podemos hacerlo realidad, no dudes en ponerte en contacto.
         <br />
+        <br />
         ¡Hablemos y veamos qué podemos crear juntos!{" "}
         <a
-          href="mailto:javiergc93@gmail.com"
-          className="text-odioHover hover:text-odioWhite font-bold underline"
+          href="mailto:hola@odioloscarros.net"
+          className="text-odioHover hover:text-odioHoveronHover font-bold underline"
         >
           ¡Escríbeme!
         </a>
-      </p>
+      </h4>
     </div>
   );
 }

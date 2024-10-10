@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         odioGreen: "#4b7b4b",
         odioHover: "#5eec0c",
+        odioHoveronHover: "#F2A900",
         odioWhite: "#dcdad7",
       },
       fontFamily: {

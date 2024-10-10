@@ -1,9 +1,4 @@
-import {
-  Routes,
-  Route,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { Routes, createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./components/pages/HomePage/HomePage";
 import Projects from "./components/pages/Projects/Projects";
 import ProjectDetail from "./components/pages/Projects/ProjectDetail/ProjectDetail";
@@ -38,7 +33,7 @@ export default function App() {
 
 function Root() {
   return (
-    <div>
+    <div className="bg-odioGreen min-h-screen">
       <Layout />
       <Routes></Routes>
     </div>
