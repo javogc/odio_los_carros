@@ -25,12 +25,12 @@ export default function NavBar() {
         >
           About
         </Link>
-        <Link
+        {/* <Link
           to="/contact"
           className="text-odioGreen text-xl font-bold transition-all duration-300 hover:letter-spacing-0.5em hover:odioHoveronHover"
         >
           Contact
-        </Link>
+        </Link> */}
       </div>
       {/* <div>
         <Link to="/">Home</Link>
