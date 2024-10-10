@@ -1,5 +1,5 @@
 import React from "react";
-// import "./HomePage.css";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
@@ -41,18 +41,44 @@ function HomePage() {
         Hello! I&apos;m Javier Guajardo, a full-stack web developer based in
         Mexico City, and I&apos;m the mind behind <b>Odio los Carros</b>. This
         project aims to question how we use technology in our lives. I firmly
-        believe that technology should not only serve humans but also be present
-        in nature—from agricultural systems like milpa to the intricate
-        collaboration found in fungi. <br />
+        believe that technology is not just a human invention; it is inherent to
+        nature itself. From the intricate systems of the{" "}
+        <a
+          href="https://www.biodiversidad.gob.mx/diversidad/sistemas-productivos/milpa"
+          className="text-odioHover hover:text-odioHoveronHover font-bold underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          milpa
+        </a>{" "}
+        to the remarkable collaboration found in{" "}
+        <a
+          href="https://www.youtube.com/watch?v=1OSvmje2MBo&ab_channel=UNDERSTORY"
+          className="text-odioHover hover:text-odioHoveronHover font-bold underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          lichens
+        </a>
+        , many sentient beings contribute to the tapestry of technology that
+        surrounds us.
+        <br />
         <br /> For me, technology is a multi-species effort that should serve
         all life on our planet. I love creating web applications that leverage
         data to help users gain valuable insights and promote sustainable
-        practices. My work spans everything from interactive dashboards and
-        real-time maps to custom solutions tailored to specific needs. I see
-        technology as a tool to solve problems and enhance our lives, all while
-        recognizing that we are part of a broader ecosystem. I use technologies
-        like React, D3.js, Leaflet, Firebase, and Supabase to deliver innovative
-        applications that truly matter.
+        practices. My{" "}
+        <Link
+          to="/projects"
+          className="text-odioHover hover:text-odioHoveronHover font-bold underline"
+        >
+          work
+        </Link>{" "}
+        spans everything from interactive dashboards and real-time maps to
+        custom solutions tailored to specific needs. I see technology as a tool
+        to solve problems and enhance our lives, all while recognizing that we
+        are part of a broader ecosystem. I use technologies like React, D3.js,
+        Leaflet, Firebase, and Supabase to deliver innovative applications that
+        truly matter.
         <br />
         <br /> I&apos;m passionate about user-centered design and always look
         for ways to make things more approachable. I enjoy collaborating with
