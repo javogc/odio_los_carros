@@ -5,6 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #dcdad7;
+  font-family: "Roboto Mono", monospace;
+}
 nav a {
   text-decoration: none;
   transition: letter-spacing 600ms, color 600ms, font-size 600ms;

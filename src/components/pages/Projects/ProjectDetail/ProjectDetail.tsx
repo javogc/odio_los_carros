@@ -16,29 +16,34 @@ export default function ProjectDetail() {
 
   return (
     <>
-      <div className="projectDetail">
+      <div className="flex flex-col md:flex-row items-center justify-center p-8 gap-5">
         <div>
-          <h1>{title}</h1>
-          <h6>
+          <h1 className="text-4xl">{title}</h1>
+          <h6 className="mt-8">
             Project Type:{" "}
             {company === "Freelance"
               ? "Freelance Project"
               : `Developed while working at ${company}`}
           </h6>
-          <h6>Technologies used:</h6>
+          <h6 className="mt-4 mb-2">Technologies used:</h6>
           {stack.map((s) => (
             <h6>-{s}</h6>
           ))}
           {/* <h6>Tech Stack: {stack.toString()}</h6> */}
           {link !== undefined && (
-            <h6>
-              <a href={link} target="_blank" rel="noreferrer">
+            <h6 className="mt-2 ">
+              <a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:color-HoveronHover"
+              >
                 Visit the website{" "}
               </a>
             </h6>
           )}
         </div>
-        <div className="description">
+        <div className="md:w-1/2">
           <p>{description}</p>
         </div>
       </div>
